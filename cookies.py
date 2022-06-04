@@ -27,7 +27,7 @@ with c2:
     cookie = st.text_input("Cookie", key="1")
     val = st.text_input("Value")
     if st.button("Add"):
-        cookie_manager.set(cookie, val, options={'httpOnly' :True, 'secure': True})
+        cookie_manager.set(cookie, val, options={'secure': True})
 with c3:
     st.subheader("Delete Cookie:")
     cookie = st.text_input("Cookie", key="2")
