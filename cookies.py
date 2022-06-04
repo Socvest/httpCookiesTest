@@ -27,7 +27,7 @@ with c2:
     cookie = st.text_input("Cookie", key="1")
     val = st.text_input("Value")
     if st.button("Add"):
-        cookie_manager.set(cookie, val, options={'domain':'share.streamlit.io'})
+        cookie_manager.set(cookie, val)
 with c3:
     st.subheader("Delete Cookie:")
     cookie = st.text_input("Cookie", key="2")
